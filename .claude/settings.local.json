@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:pixabay.com)"
+      "WebFetch(domain:pixabay.com)",
+      "Bash(python:*)",
+      "Bash(ls:*)"
     ],
     "deny": []
   }
