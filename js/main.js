@@ -50,9 +50,18 @@
     
     
     // jQuery counterUp
-    $('[data-toggle="counter-up"]').counterUp({
-        delay: 10,
-        time: 2000
+    $(document).ready(function() {
+        $('[data-toggle="counter-up"]').each(function() {
+            $(this).waypoint(function() {
+                $(this.element).counterUp({
+                    delay: 10,
+                    time: 2000
+                });
+            }, {
+                offset: '80%',
+                triggerOnce: true
+            });
+        });
     });
     
     
